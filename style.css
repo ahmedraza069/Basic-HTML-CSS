@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+nav{
+    height: 80px;
+    background: linear-gradient(to bottom, #ff99ff 0%, #ff99cc 100%);
+    position: relative;
+    border-bottom: 2px solid blue;
+}
+nav img{
+    width: 150px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 80px;
+}
+nav ul{
+    float: right;
+    margin-right: 400px;
+}
+nav ul li{
+    display: inline-block;
+    list-style-type: none;
+    margin-right: 25px;
+    color: blue;
+    position: relative;
+    transition: 0.4s;
+    
+}
+nav ul li:hover{
+    background-color: orange;
+    color: red;
+    border-radius: 15px;
+}
+nav ul li a{
+    color: black;
+    font-size: 16px;
+    text-transform: uppercase;
+    line-height: 80px;
+}
+
+ #check{
+    position: absolute;
+    display: block;
+    left: 73%;
+    line-height: 25px;
+    top: 50%;
+    transform: translateY(-50%);
+    border: 1px solid red;
+    border-radius: 5px;
+    text-align: center;
+ }
+ #btn{
+    position: absolute;
+    left: 87%;
+   line-height: 80px;
+    font-size: 30px;
+ }
+ #search{
+    position: absolute;
+    left: 84%;
+    line-height: 80px;
+ }
+.images{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    left: 91%;
+    border-radius: 50%;
+}
+.green{
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: green;
+    border: 1px solid #fff;
+    border-radius: 50% ;
+    left: 93%;
+    top: 19px;
+}
+nav ul li ul{
+    position: absolute;
+    top: 80px;
+    left: -999999px;
+    transition: 0.2;
+   
+}
+nav ul li:hover ul{
+    left: 0;
+}
+nav ul li ul li{
+    width: 150px;
+    height: 50px;
+    background-color: #d4d4d7;
+    border-bottom: 1px solid #ccff99;
+    text-align: center;
+    border-radius: 3px;
+    position: relative;
+}
+nav ul li ul li a{
+    line-height: 40px;
+}
+nav ul li ul li ul{
+    position: absolute;
+    top: -9999999px;
+}
+nav ul li ul li:hover ul{
+    top:0;
+    left:  150px;
+}
